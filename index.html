@@ -4,14 +4,13 @@
 <head>
     <script src="./lib/phaser.js"></script>
     <script src="./src/preloader.js"></script>
-    <!-- <script src="./src/Button.js"></script> -->
+    <script src="./src/Button.js"></script>
     <!-- <script src="./src/Entity.js"></script> -->
     <!-- <script src="./src/Weapon.js"></script> -->
-
     <script src="./src/scenes/ClickScene.js"></script>
     <!-- <script src="./src/scenes/CreditsScene.js"></script> -->
     <!-- <script src="./src/scenes/GameOverScene.js"></script> -->
-    <!-- <script src="./src/scenes/Level1Scene.js"></script> -->
+    <script src="./src/scenes/Level1Scene.js"></script>
     <script src="./src/scenes/MenuScene.js"></script>
     <!-- <script src="./src/scenes/VictoryScene.js"></script> -->
 
@@ -56,7 +55,7 @@
                 mode: Phaser.Scale.FIT,
                 autoCenter: Phaser.Scale.CENTER_BOTH
             },
-            scene: [Preloader, ClickScene]
+            scene: [Preloader, ClickScene, MenuScene]
         };
         var game = new Phaser.Game(config);
     </script>
