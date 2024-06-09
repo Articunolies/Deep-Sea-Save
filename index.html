@@ -6,7 +6,7 @@
     <script src="./src/preloader.js"></script>
     <script src="./src/Button.js"></script>
     <!-- <script src="./src/Entity.js"></script> -->
-    <!-- <script src="./src/Weapon.js"></script> -->
+    <script src="./src/Weapon.js"></script>
     <script src="./src/scenes/ClickScene.js"></script>
     <!-- <script src="./src/scenes/CreditsScene.js"></script> -->
     <!-- <script src="./src/scenes/GameOverScene.js"></script> -->
@@ -15,7 +15,7 @@
     <!-- <script src="./src/scenes/VictoryScene.js"></script> -->
 
     <meta charset="UTF-8">
-    <title>Kraken Run</title>
+    <title>Deep Sea Save</title>
 
     <style type="text/css">
         body {
@@ -55,7 +55,7 @@
                 mode: Phaser.Scale.FIT,
                 autoCenter: Phaser.Scale.CENTER_BOTH
             },
-            scene: [Preloader, ClickScene, MenuScene]
+            scene: [Preloader, ClickScene, MenuScene, Level1Scene]
         };
         var game = new Phaser.Game(config);
     </script>
