@@ -57,7 +57,7 @@ class Level1Scene extends Phaser.Scene {
       this.LiveCount = 3;
       this.LostLife = false;
       this.CollisionTimer = 0;
-      this.Oxygen = 4000;
+      this.Oxygen = 6000;
       this.DiversSavedCount = 0;
 
       this.torpedoes = new Torpedoes(this);
@@ -149,9 +149,9 @@ class Level1Scene extends Phaser.Scene {
   }
 
   getSpawnRate() {
-      if (this.Oxygen > 3000) return 10;
-      if (this.Oxygen > 2000) return 60;
-      if (this.Oxygen > 1000) return 90;
+      if (this.Oxygen > 5000) return 10;
+      if (this.Oxygen > 3000) return 60;
+      if (this.Oxygen > 2000) return 90;
       return 120;
   }
 
@@ -256,7 +256,7 @@ class Level1Scene extends Phaser.Scene {
           this.level1_music.stop();
           this.cameras.main.fadeOut(500, 0, 0, 0);
           this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, (cam, effect) => {
-              this.scene.start('victoryscene', { nextScene: 'level2scene' });
+              this.scene.start('victoryscene');
           });
       }
   }

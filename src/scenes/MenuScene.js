@@ -3,9 +3,6 @@ class MenuScene extends Phaser.Scene {
         super({ key: 'menuscene' });
     }
 
-    preload() {
-        // Load necessary assets if any
-    }
 
     create() {
         this.cameras.main.fadeIn(500, 0, 0, 0);
