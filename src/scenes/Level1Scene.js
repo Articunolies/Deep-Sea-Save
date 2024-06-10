@@ -149,9 +149,9 @@ class Level1Scene extends Phaser.Scene {
   }
 
   getSpawnRate() {
-      if (this.Oxygen > 5000) return 10;
-      if (this.Oxygen > 3000) return 60;
-      if (this.Oxygen > 2000) return 90;
+      if (this.Oxygen > 7000) return 10;
+      if (this.Oxygen > 5000) return 60;
+      if (this.Oxygen > 3000) return 90;
       return 120;
   }
 
